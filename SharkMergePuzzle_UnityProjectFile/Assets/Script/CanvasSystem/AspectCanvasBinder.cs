@@ -9,7 +9,7 @@ public enum AspectState
 /// <summary>
 /// ‰æ–Êaspect”ä‚ð•Ï‚¦‚é‚½‚ß‚ÌcanvasŽæ“¾‚Ì‚½‚ß‚ÌView
 /// </summary>
-public class BackGroundView : InspectorSetOnlyView
+public class AspectCanvasBinder : InspectorSetOnlyBinder
 {
     [SerializeField] Canvas landscapeCanvas;
     [SerializeField] Canvas portraitCanvas;
