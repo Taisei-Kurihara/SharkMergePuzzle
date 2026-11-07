@@ -1,18 +1,13 @@
 using UnityEngine;
 
-public enum AspectState
-{
-    landscape   = 1<<0, // 横長画面
-    portrait    = 1<<1, // 縦長画面
-}
-
 /// <summary>
 /// 画面aspect比を変えるためのcanvas取得のためのView
+/// 表示非表示を切り替えるためだけの物なので ボタンなど中身の要素については扱わない
 /// </summary>
 public class AspectCanvasBinder : InspectorSetOnlyBinder
 {
-    [SerializeField] Canvas landscapeCanvas;
-    [SerializeField] Canvas portraitCanvas;
+    [SerializeField] private Canvas landscapeCanvas;
+    [SerializeField] private Canvas portraitCanvas;
 
     protected override void HandOverPresenter()
     {
